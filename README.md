@@ -51,6 +51,9 @@ policies
  3. clerk
  4. System Admin
 
+# use-case
+  1. Mange Time
+  ![Flow-chart](img/flow-chart-use-case.png)
 
 
  
