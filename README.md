@@ -53,7 +53,7 @@ policies
 
 # use-case
   1. Mange Time
-  ![Flow-chart](img/flow-chart-use-case.png)
+  ![Flow-chart](img/Flow-chart leave Mange time.png)
 
 
  
