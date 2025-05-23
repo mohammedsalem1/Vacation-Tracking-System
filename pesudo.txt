@@ -1,0 +1,62 @@
+ // use-case Manage Time //
+ ********* create new vacation ******
+ start 
+  function homePage(employee) 
+    if isEmployeeAuthorized(employee)
+      if isManagerAuthorized(employee)
+        dispalyAllListRelatedManger\
+      else
+       return employee_balance
+
+   function newRequest(employee , startData , endDate , category_name)
+     if isEmployee(employee) and isValidDataRange(startData , endDate) and  isValidCategory(category_name)
+        if isEmployeeBalanced
+          vacationRequest = newVacation(employee , startData , endDate , category_name)
+          updateRequest = sendEmailToMangeAddNewVacationTolist(vacationRequest)
+          return "Add new Request is pending"
+        else 
+          return "No have balance employee"
+     else 
+        return "InValid Input data"         
+
+
+    function vacationResponce(vacationRequest , employee)
+       homePage(employee)
+       if MangerApprovedRequest(vacationRequest)
+          updateRequestPendingToResolve(vacationRequest.state)
+       else
+          updateRequestPendingToReject(vacationRequest.state)
+  end   
+
+**********************************************************
+  withdraw Request
+  function withdrawRequest(employee)   
+    if isValidEmployee(employee)
+      showVacationSummary(employee)
+      selectRequestToWithdraw()
+      prompt("Are you need WithdrawRequest?") 
+    else
+       return "The employee not Authorized"
+
+    if employeeApproveWithdraw(vacation_request):
+       updateRequesToWithdraw;
+       sendEmailToMangerUpdate;
+       displayHomePageWithUpdatedRequestsStatus(employee).
+    else 
+      NoChangeVacationRequest
+
+**********************************************************      
+function cancellRequest(employee)   
+    if isValidEmployee(employee)
+      showVacationSummary(employee)
+      selectRequestToCancell()
+      prompt("Are you need WithdrawRequest?") 
+    else
+       return "The employee not Authorized"
+
+    if employeeApproveCancellation(vacation_request):
+       updateRequesTtoCancell;
+       sendEmailToMangerUpdate;
+       displayHomePageWithUpdatedRequestsStatus(employee).
+    else 
+      NoChangeVacationRequest
