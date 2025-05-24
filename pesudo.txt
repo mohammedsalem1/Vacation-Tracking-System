@@ -1,31 +1,14 @@
  // use-case Manage Time //
  ********* create new vacation ******
  start 
-  function homePage(employee) 
-    if isEmployeeAuthorized(employee)
-      if isManagerAuthorized(employee)
-        dispalyAllListRelatedManger\
-      else
-       return employee_balance
-
-   function newRequest(employee , startData , endDate , category_name)
-     if isEmployee(employee) and isValidDataRange(startData , endDate) and  isValidCategory(category_name)
-        if isEmployeeBalanced
-          vacationRequest = newVacation(employee , startData , endDate , category_name)
-          updateRequest = sendEmailToMangeAddNewVacationTolist(vacationRequest)
-          return "Add new Request is pending"
-        else 
-          return "No have balance employee"
-     else 
-        return "InValid Input data"         
-
-
-    function vacationResponce(vacationRequest , employee)
-       homePage(employee)
-       if MangerApprovedRequest(vacationRequest)
-          updateRequestPendingToResolve(vacationRequest.state)
-       else
-          updateRequestPendingToReject(vacationRequest.state)
+   function createLeaveRequest(employee , dataRange , category_name)
+      validationData = {employee , dataRange , category_name}
+      if !validationData return "The data is not correct"
+      leaveRequest =  {employee , dataRange , category_name}
+      updateEmployeeleaveRequest()
+      SaveLeaveRequestInDB()
+      NotifyManager()
+      if Manger's proved
   end   
 
 **********************************************************

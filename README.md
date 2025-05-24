@@ -51,9 +51,23 @@ policies
  3. clerk
  4. System Admin
 
-# use-case
+# Flow-chart
   1. Mange Time
-  ![Flow-chart](img/Flow-chart-leaveMangeTime.png)
+  ![Flow-chart](Flow-chart/Flow-chart-leaveMangeTime.png)
+
+# use-case 
+ 1. ManageTime 
+    a. sequence digrame (create Leave Request)
+   ![sequence-digrame](sequence-digrame/createLeaveRequest.png)
+
+    b. sequence digrame (withdraw Pending Request)
+   ![sequence-digrame](sequence-digrame/withdrawLeaveRequest.png)
+
+    c. sequence digrame (cancel Aproved Request)
+   ![sequence-digrame](sequence-digrame/cancelLeaveRequest.png)
+
+    d. sequence digrame (edit Pending Request)
+   ![sequence-digrame](sequence-digrame/editLeaveRequest.png)
 
 
  
