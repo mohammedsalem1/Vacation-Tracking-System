@@ -25,7 +25,8 @@ policies
   7. Allows managers to directly award personal leave time (within system-set limits).
   
   8. Provides a Web service interface for other internal systems to query employee vacation request summaries.
-
+ 
+  9.  Interfaces with the HR department legacy systems to retrieve required employee information and changes.
 
 
 ### ✅ Non-Functional Requirements (NFRs)
@@ -33,17 +34,17 @@ policies
   1. The system must be easy to use.
   2. The system must be accessible on both desktop and mobile devices.
 
+  
+
 ## 🚧 Constraints
 
  1. Is implemented as an extension to the existing intranet portal system, and uses the portal’s single-sign-on mechanisms for all authentication.
 
- 2. Interfaces with the HR department legacy systems to retrieve required employee information and changes.
-
- 3. The system must work on both mobile and desktop with responsive design
+ 2. The system must work on both mobile and desktop with responsive design
 
 ## 📌 Domain [Define Problem]
 
--- Many organizations lack an efficient and automated system to manage employee vacation requests and approvals. Manual methods or basic email-based systems lead to delays, errors, policy violations, and lack of transparency. There is a need for a centralized, web-based vacation tracking system that ensures accurate tracking, timely approvals, and policy compliance.
+ Many organizations lack an efficient and automated system to manage employee vacation requests and approvals. Manual methods or basic email-based systems lead to delays, errors, policy violations, and lack of transparency. There is a need for a centralized, web-based vacation tracking system that ensures accurate tracking, timely approvals, and policy compliance.
 
 ## 🎭 Actors:
  1. Manager
@@ -52,7 +53,7 @@ policies
  4. System Admin
 
 # Flow-chart
-  1. Mange Time
+ ## 1. Manage Time
   ![Flow-chart](Flow-chart/Flow-chart-leaveManageTime.png)
 
 # use-case 
