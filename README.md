@@ -49,12 +49,8 @@ policies
  4. System Admin
 
 # State Machine System
-  ![Flow-chart](Flow-chart/StateMachine.drawio.png)
+  ![Flow-chart](Flow-chart/StateMachine.png)
 
- 
-# Flow-chart
- ## 1. Manage Time
-  ![Flow-chart](Flow-chart/Flow-chart-leaveManageTime.png)
 
 # use-case 
 
