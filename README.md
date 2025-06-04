@@ -59,7 +59,7 @@ policies
 # use-case 
 
  ## ManageTime (Employee , Manager)
-
+ ### Submit Request leave
  <details>
  <summary>flow chart </summary>
 
@@ -75,7 +75,15 @@ policies
  <details>
   <summary>Pseudocode</summary>
 
-  ```pseudocode
+   ## 🧑‍💼 EMPLOYEE SECTION
+
+  ```
+  function createLeaveRequest:
+    employeeLogin()
+    selectRequestCategory()
+    requestData:=FillDate()
+    submitLeaveRequest(requestDate)
+
   function submitLeaveRequest(request):
       if isValid(request):
           saveToDatabase(request)
@@ -83,6 +91,28 @@ policies
       else:
           showError("Invalid request")
   ```
+    ## 🧑‍💼 Manager SECTION
+  ```
+  function reviewManagerRequests:
+  managerLogin()
+  pendingRequests := fetchPendingRequests()
+  for request in pendingRequests:
+  displayRequestDetails(request)
+  decision := getManagerDecision() // approve or reject
+  processDecision(request, decision)
+
+  function processDecision(request, decision):
+  if decision == "approve":
+  updateRequestStatus(request, "Approved")
+  notifyEmployee(request, "Approved")
+  
+  else if decision == "reject":
+  updateRequestStatus(request, "Rejected")
+  notifyEmployee(request, "Rejected")
+  else:
+  showError("Invalid decision")
+       
+
 </details>
 
 
