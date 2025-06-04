@@ -91,7 +91,7 @@ policies
       else:
           showError("Invalid request")
   ```
-    ## 🧑‍💼 Manager SECTION
+  ## 🧑‍💼 Manager SECTION
   ```
   function reviewManagerRequests:
   managerLogin()
@@ -111,8 +111,7 @@ policies
   notifyEmployee(request, "Rejected")
   else:
   showError("Invalid decision")
-       
-
+  ```
 </details>
 
 
