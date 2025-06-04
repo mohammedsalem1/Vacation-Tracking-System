@@ -75,13 +75,14 @@ policies
  <details>
   <summary>Pseudocode</summary>
 
-  pseudocode
+  ```pseudocode
   function submitLeaveRequest(request):
       if isValid(request):
           saveToDatabase(request)
           notifyManager(request)
       else:
           showError("Invalid request")
+  ```
 </details>
 
 
