@@ -190,13 +190,49 @@ policies
       else
         NothingHappen  
   ```
+</details>
+
+ ##    Edit Pending Request(Employee)
+ ## ↩️  edit Request
+<details>
+  <summary>flow chart </summary>
+
+  ![Flow-chart](Flow-chart/editPendingRequest.png)
+</details>
+
+<details>
+ <summary>Sequence Diagram (Edit Pending Request)</summary>
+
+ ![sequence-digrame](sequence-digrame/editLeaveRequest.png)
+</details>
 
 
-### b. sequence digrame (withdraw Pending Request)
-   ![sequence-digrame](sequence-digrame/withdrawLeaveRequest.png)
+<details>
+  <summary>Pseudocode</summary>
+  
+  ```
+  function editPendingRequest:
+      employeeLogin()
+      request:= selectPendingRequest()
+      selectRequestTOWithdraw()
+      isValid = false;  
+    WHILE !isValid:
+        DISPLAY "Enter title: "
+        DISPLAY "Enter description: "
+        DISPLAY "Enter date range: "
+        DISPLAY "Enter leave type: "
+        READ title, description, dateRange, leaveType
+        isValid, validationErrors = validateData(title, description, dateRange, leaveType)
+        leaveRequest = {title, description, dateRange, leaveType}
+        displayValidationErrors(validationErrors)
+         leaveRequest = updateLeaveRequestInDatabase(leaveRequest)
+         updateEmployeeLeaveBalance()
 
-   ### d. sequence digrame (edit Pending Request)
-   ![sequence-digrame](sequence-digrame/editLeaveRequest.png)
+        @async 
+        sendsNotificationEmail()
+  ```
+</details>
+
 
 
  
