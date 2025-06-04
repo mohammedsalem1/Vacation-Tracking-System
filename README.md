@@ -59,7 +59,7 @@ policies
 # use-case 
  ## 1. ManageTime (Employee , Manager)
    ### a. flow chart
-    #### Employee flow
+   ### Employee flow
       ![Flow-chart](Flow-chart/EmployeeFlow.png)
  
      
