@@ -156,6 +156,8 @@ policies
      updateEmployeeBalance    
   
   ```
+  </details>
+
  ##   Withdraw Request(Employee)
  ## ↩️  Withdraw Request
  
@@ -166,7 +168,7 @@ policies
 </details>
 
 <details>
- <summary>Sequence Diagram (Cancel Leave Request)</summary>
+ <summary>Sequence Diagram (withdrawRequest)</summary>
 
  ![sequence-digrame](sequence-digrame/withdrawRequest.png)
 </details>
@@ -187,15 +189,10 @@ policies
 
       else
         NothingHappen  
-       
-  
   ```
 
 
-
-
-
-   ### b. sequence digrame (withdraw Pending Request)
+### b. sequence digrame (withdraw Pending Request)
    ![sequence-digrame](sequence-digrame/withdrawLeaveRequest.png)
 
    ### d. sequence digrame (edit Pending Request)
