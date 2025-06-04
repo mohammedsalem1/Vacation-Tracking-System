@@ -122,7 +122,7 @@ policies
  <details>
  <summary>flow chart </summary>
 
- ![Flow-chart](CancelRequest.png)
+ ![Flow-chart](Flow-chart/CancelRequest.png)
 </details>
 <details>
  <summary>Sequence Diagram (Cancel Leave Request)</summary>
@@ -156,7 +156,40 @@ policies
      updateEmployeeBalance    
   
   ```
+ ##   Withdraw Request(Employee)
+ ## ↩️  Withdraw Request
+ 
+ <details>
+ <summary>flow chart </summary>
 
+ ![Flow-chart](Flow-chart/withdrawRequest.png)
+</details>
+
+<details>
+ <summary>Sequence Diagram (Cancel Leave Request)</summary>
+
+ ![sequence-digrame](sequence-digrame/withdrawRequest.png)
+</details>
+
+<details>
+  <summary>Pseudocode</summary>
+  
+  ```
+  function withdrawRequest:
+      employeeLogin()
+      request:= selectPendingRequest()
+      selectRequestTOWithdraw()
+      prompt("Do you sure to withdraw")
+      if(valid)
+        sendsNotificationEmail()
+        updateStatusToWithdrawInDB
+        removeLeaveRequestFromManager'sPendingList(leaveRequest)
+
+      else
+        NothingHappen  
+       
+  
+  ```
 
 
 
@@ -164,9 +197,6 @@ policies
 
    ### b. sequence digrame (withdraw Pending Request)
    ![sequence-digrame](sequence-digrame/withdrawLeaveRequest.png)
-
-   ### c. sequence digrame (cancel Aproved Request)
-   ![sequence-digrame](sequence-digrame/cancelLeaveRequest.png)
 
    ### d. sequence digrame (edit Pending Request)
    ![sequence-digrame](sequence-digrame/editLeaveRequest.png)
