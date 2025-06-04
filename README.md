@@ -1,5 +1,4 @@
-# Vacation-Tracking-System
-A web-based Vacation Tracking System that helps organizations manage and monitor employee vacation requests, approvals, and balances efficiently.
+
 
 ## 🎯 Vision
 A Vacation Tracking System (VTS) will provide individual employees with the 
@@ -21,43 +20,44 @@ policies
   5. Keeps activity logs for all transactions.
   
   6. Enables HR and system admin to override all actions, with logging.
-
-  7. Allows managers to directly award personal leave time (within system-set limits).
   
-  8. Provides a Web service interface for other internal systems to query employee vacation request summaries.
- 
-  9.  Interfaces with the HR department legacy systems to retrieve required employee information and changes.
-
+  7. Allows managers to directly award personal leave time 
+  8. Integration services 
 
 ### ✅ Non-Functional Requirements (NFRs)
   
-  1. The system must be easy to use.
-  2. The system must be accessible on both desktop and mobile devices.
+  . * Uses existing hardware and middleware
+    * The system must be easy to use.[usability]
 
   
 
 ## 🚧 Constraints
 
- 1. Is implemented as an extension to the existing intranet portal system, and uses the portal’s single-sign-on mechanisms for all authentication.
-
- 2. The system must work on both mobile and desktop with responsive design
+  * Integrations
+  * Legacy Hardware 
+  * Single-sign-on
+  * User experience
 
 ## 📌 Domain [Define Problem]
 
  Many organizations lack an efficient and automated system to manage employee vacation requests and approvals. Manual methods or basic email-based systems lead to delays, errors, policy violations, and lack of transparency. There is a need for a centralized, web-based vacation tracking system that ensures accurate tracking, timely approvals, and policy compliance.
 
 ## 🎭 Actors:
- 1. Manager
- 2. Employee
- 3. clerk
+ 1. Managers
+ 2. Employees
+ 3. HR
  4. System Admin
 
+# State Machine System
+  ![Flow-chart](Flow-chart/StateMachine.drawio.png)
+
+ 
 # Flow-chart
  ## 1. Manage Time
   ![Flow-chart](Flow-chart/Flow-chart-leaveManageTime.png)
 
 # use-case 
- ## 1. ManageTime 
+ ## 1. ManageTime (Employee , Manager)
    ### a. sequence digrame (create Leave Request)
    ![sequence-digrame](sequence-digrame/createLeaveRequest.png)
 

@@ -1,0 +1,10 @@
+@startuml
+start
+:Input data;
+if (Is valid?) then (yes)
+  :Process data;
+else (no)
+  :Show error;
+endif
+stop
+@enduml
