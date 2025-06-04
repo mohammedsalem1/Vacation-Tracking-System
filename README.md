@@ -57,10 +57,8 @@ policies
   ![Flow-chart](Flow-chart/Flow-chart-leaveManageTime.png)
 
 # use-case 
-<details open>
-  <summary> ManageTime (Employee , Manager)</summary>
 
-</details>
+ ## ManageTime (Employee , Manager)
 
  <details>
  <summary>flow chart </summary>
@@ -74,10 +72,16 @@ policies
 ![sequence-digrame](sequence-digrame/createLeaveRequest.png)
 </details>
 
-<details>
- <summary>PesudoCode</summary>
- 
-  ![PesudoCode](submitRequest.md)
+ <details>
+  <summary>Pseudocode</summary>
+
+  pseudocode
+  function submitLeaveRequest(request):
+      if isValid(request):
+          saveToDatabase(request)
+          notifyManager(request)
+      else:
+          showError("Invalid request")
 </details>
 
 
