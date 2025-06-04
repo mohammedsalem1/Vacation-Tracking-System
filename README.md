@@ -59,7 +59,7 @@ policies
 # use-case 
 
  ## ManageTime (Employee , Manager)
- ### Submit Request leave
+ ## 📝Submit Request leave
  <details>
  <summary>flow chart </summary>
 
@@ -115,6 +115,50 @@ policies
         showError("Invalid decision")
   ```
 </details>
+
+
+ ##  Cancel Request  (Employee)
+ ## ⛔ Cancel Request leave
+ <details>
+ <summary>flow chart </summary>
+
+ ![Flow-chart](CancelRequest.png)
+</details>
+<details>
+ <summary>Sequence Diagram (Cancel Leave Request)</summary>
+
+ ![sequence-digrame](sequence-digrame/cancelLeaveRequest.png)
+</details>
+
+<details>
+  <summary>Pseudocode</summary>
+  
+  ```
+  function cancelRequestLeave:
+    request =:selectRequestToCancel
+
+    if (request in "InFuture")
+      valid =: displayConfirmCancel
+      if(valid)
+        changeAfterEmployeeCancell
+      else
+        return  
+
+   else (request in "Previous 5 business days")
+      valid =: displayConfirmCancelAndCancelReason
+      if(valid)
+        changeAfterEmployeeCancell
+      else
+        return  
+
+  function changeAfterEmployeeCancell
+     updateRequestToCancellInDB
+     updateEmployeeBalance    
+  
+  ```
+
+
+
 
 
 
