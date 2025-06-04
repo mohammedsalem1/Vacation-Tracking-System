@@ -58,7 +58,12 @@ policies
 
 # use-case 
  ## 1. ManageTime (Employee , Manager)
-   ### a. sequence digrame (create Leave Request)
+   ### a. flow chart
+    #### Employee flow
+      ![Flow-chart](Flow-chart/EmployeeFlow.png)
+ 
+     
+   ### b. sequence digrame (create Leave Request)
    ![sequence-digrame](sequence-digrame/createLeaveRequest.png)
 
    ### b. sequence digrame (withdraw Pending Request)
