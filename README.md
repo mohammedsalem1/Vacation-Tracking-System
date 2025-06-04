@@ -57,16 +57,29 @@ policies
   ![Flow-chart](Flow-chart/Flow-chart-leaveManageTime.png)
 
 # use-case 
- ## 1. ManageTime (Employee , Manager)
+<details open>
+  <summary> ManageTime (Employee , Manager)</summary>
 
-   ### a. flow chart 
+</details>
+
+ <details>
+ <summary>flow chart </summary>
+
    ![Flow-chart](Flow-chart/EmployeeAndManagerFlow.png)
-  
-   ### b. sequence digrame (create Leave Request)
-   ![sequence-digrame](sequence-digrame/createLeaveRequest.png)
+</details>
 
-   ### c. PesudoCode
-  ![Link text](submitRequest.md)
+<details>
+ <summary>Sequence Diagram (create Leave Request)</summary>
+
+![sequence-digrame](sequence-digrame/createLeaveRequest.png)
+</details>
+
+<details>
+ <summary>PesudoCode</summary>
+ 
+  ![PesudoCode](submitRequest.md)
+</details>
+
 
 
    ### b. sequence digrame (withdraw Pending Request)
